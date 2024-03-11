@@ -13,6 +13,7 @@
   border-radius: 20px;
   display: flex;
   overflow: hidden;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .main-section {
@@ -36,7 +37,9 @@
 .image-section {
   width: 50%;
   height: 100%;
-  background: #d2abe4;
+  background: linear-gradient(-45deg, #d2abe4 90%, #474e21 90%, #474e21 100%);
+  font-family: "PT Sans Caption", sans-serif;
+  padding: 0px 30px;
 }
 
 header {
@@ -96,10 +99,36 @@ header {
   box-shadow: 4px 4px #d6ade8;
 }
 
+.agent-button:hover {
+  border-color: #d6ade8;
+}
+
 .agent-icon {
   background: #d2abe4;
   width: 30px;
   height: 30px;
   border-radius: 100%;
   overflow: hidden;
+}
+
+.image-section-button {
+  background: transparent;
+  color: white;
+  font-size: 0.6rem;
+}
+
+.buttons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 50px;
+}
+
+.quote-button {
+  background: #474e21;
+}
+
+.image-wrapper {
+  height: 400px;
+  width: 300px;
 }
