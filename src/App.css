@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap");
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -20,7 +22,9 @@
 
 .tagline-section {
   background: #474e21;
-  height: 80%;
+  font-family: "PT Sans Caption", sans-serif;
+  height: 400px;
+  padding: 0px 30px;
 }
 
 .seen-on-section {
@@ -33,4 +37,69 @@
   width: 50%;
   height: 100%;
   background: #d2abe4;
+}
+
+header {
+  color: white;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 0.6rem;
+}
+
+.nav-link:hover {
+  color: #eeff6e;
+}
+
+.tagline-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: start;
+  text-align: left;
+  width: 70%;
+  height: 300px;
+  padding-left: 10px;
+}
+
+.tagline {
+  color: #eeff6e;
+  font-size: 2rem;
+}
+
+.title-accent {
+  color: #d6ade8;
+  font-weight: 700;
+}
+
+.agent-button {
+  background: #eaff6c;
+  font-weight: 700;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 4px 4px #d6ade8;
+}
+
+.agent-icon {
+  background: #d2abe4;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  overflow: hidden;
 }

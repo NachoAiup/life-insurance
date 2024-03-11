@@ -1,12 +1,10 @@
 import "./App.css";
+import MainCardSection from "./components/MainCardSection/MainCardSection";
 
 function App() {
   return (
     <div className="card">
-      <div className="main-section">
-        <div className="tagline-section"></div>
-        <div className="seen-on-section"></div>
-      </div>
+      <MainCardSection />
       <div className="image-section"></div>
     </div>
   );
