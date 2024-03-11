@@ -1,3 +1,5 @@
+import PriceCard from "./PriceCard/PriceCard";
+
 function ImageSection() {
   return (
     <div className="image-section">
@@ -7,10 +9,12 @@ function ImageSection() {
           Get a quote
         </button>
       </div>
+      <PriceCard />
       <div className="image-wrapper">
         <img
           src="https://freepngimg.com/save/27644-family-transparent/582x825"
           height={700}
+          className="card-image"
         />
       </div>
     </div>
