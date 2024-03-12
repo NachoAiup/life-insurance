@@ -41,7 +41,7 @@
   height: 100%;
   background: linear-gradient(45deg, #f6fcd5 60px, #d2abe4 0) bottom,
     linear-gradient(135deg, #474e21 60px, #d2abe4 0) top;
-  background-size: 100% 51%; /* width height */
+  background-size: 100% 51%;
   background-repeat: no-repeat;
   font-family: "PT Sans Caption", sans-serif;
   position: relative;
@@ -129,7 +129,7 @@ header {
   align-items: center;
   justify-content: end;
   height: 50px;
-  padding: 0px 30px;
+  padding: 10px 30px;
 }
 
 .image-section-button:hover {
@@ -288,4 +288,63 @@ header {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 10px solid #d2abe4;
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding: 0.5rem;
+  }
+
+  .card {
+    flex-direction: column;
+    height: max-content;
+    width: 345px;
+  }
+
+  .tagline-section {
+    padding: 0px 20px;
+    background: linear-gradient(-45deg, #f6fcd5 40px, #474e21 0) top;
+  }
+
+  .main-section {
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-section {
+    width: 100%;
+  }
+
+  .buttons-wrapper {
+    padding: 0px 20px;
+  }
+
+  .seen-on-wrapper {
+    padding: 10px 30px;
+  }
+
+  .seen-on-places {
+    padding: 0 0 0 20px;
+    justify-content: space-around;
+  }
+
+  .arrow {
+    width: 120px;
+  }
+
+  .triangle-down {
+    left: 116px;
+  }
+
+  .image-section {
+    background: linear-gradient(135deg, #f6fcd5 40px, #d2abe4 0) top;
+  }
+
+  .covered-wrapper {
+    left: -25px;
+  }
+
+  .price-card {
+    margin-left: 25px;
+  }
 }
