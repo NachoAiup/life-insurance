@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Space+Grotesk:wght@300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Sans+Caption:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Sans+Caption:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap");
 
 #root {
   max-width: 1280px;
@@ -24,20 +26,23 @@
 .tagline-section {
   background: #474e21;
   font-family: "PT Sans Caption", sans-serif;
-  height: 400px;
+  height: 415px;
   padding: 0px 30px;
 }
 
 .seen-on-section {
   background: #f6fcd5;
   width: 100%;
-  height: 20%;
+  height: 85px;
 }
 
 .image-section {
   width: 50%;
   height: 100%;
-  background: linear-gradient(-45deg, #d2abe4 90%, #474e21 90%, #474e21 100%);
+  background: linear-gradient(45deg, #f6fcd5 60px, #d2abe4 0) bottom,
+    linear-gradient(135deg, #474e21 60px, #d2abe4 0) top;
+  background-size: 100% 51%; /* width height */
+  background-repeat: no-repeat;
   font-family: "PT Sans Caption", sans-serif;
   position: relative;
 }
@@ -196,4 +201,75 @@ header {
 
 .monthly-price {
   font-size: 0.9rem;
+}
+
+.seen-on-wrapper {
+  width: 110px;
+  text-align: left;
+  padding: 10px 40px;
+  background: linear-gradient(45deg, #d2abe4 78%, #f6fcd5 78%, #f6fcd5 100%);
+  color: #f6fcd5;
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.arrow {
+  width: 150px;
+  background: #d2abe4;
+  height: 2px;
+  position: absolute;
+  right: -80px;
+  top: 22px;
+}
+
+.arrow::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 15px;
+  background: #d2abe4;
+  width: 2px;
+  left: 100%;
+  top: 0;
+}
+
+.seen-on-places {
+  display: flex;
+  padding: 0 0 0 40px;
+  color: #32390c;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  height: 40px;
+  font-weight: 700;
+}
+
+.lora {
+  font-family: "Lora", serif;
+  font-style: normal;
+  font-size: 0.9rem;
+}
+
+.merriweather {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-size: 0.7rem;
+}
+
+.pt-sans {
+  font-family: "PT Sans Caption", sans-serif;
+  font-style: normal;
+}
+
+.triangle-down {
+  position: absolute;
+  left: 146px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #d2abe4;
 }
