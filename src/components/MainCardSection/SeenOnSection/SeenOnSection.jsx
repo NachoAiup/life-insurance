@@ -8,9 +8,9 @@ function SeenOnSection() {
         </div>
       </div>
       <div className="seen-on-places">
-        <p className="pt-sans">TechCrunch</p>
-        <p className="lora">Forbes</p>
-        <p className="merriweather">THE WALL STREET JOURNAL</p>
+        <p className="pt-sans hover-underline">TechCrunch</p>
+        <p className="lora hover-underline">Forbes</p>
+        <p className="merriweather hover-underline">THE WALL STREET JOURNAL</p>
       </div>
     </div>
   );

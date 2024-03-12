@@ -9,14 +9,14 @@ function TaglineSection() {
       "https://fu6hk3qh0f.execute-api.eu-west-3.amazonaws.com/default/frontendTest"
     ).then((res) => res.json().then((data) => setContent(data)));
   }, []);
-  console.log(content);
+
   return (
     <div className="tagline-section">
       <header>
-        <div className="logo-wrapper">
+        <a href="/" className="logo-wrapper">
           <img src="./octo-logo.png" />
           <p className="logo">octo</p>
-        </div>
+        </a>
         {content?.nav.map((navItem, index) => (
           <a href={navItem.link} key={index} className="nav-link">
             {navItem.title}

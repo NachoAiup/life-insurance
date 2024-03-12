@@ -102,10 +102,12 @@ header {
   align-items: center;
   gap: 10px;
   box-shadow: 4px 4px #d6ade8;
+  transition: background-color 0.3s;
 }
 
 .agent-button:hover {
   border-color: #d6ade8;
+  background: #daf34a;
 }
 
 .agent-icon {
@@ -128,6 +130,10 @@ header {
   justify-content: end;
   height: 50px;
   padding: 0px 30px;
+}
+
+.image-section-button:hover {
+  color: #eeff6e;
 }
 
 .quote-button {
@@ -244,6 +250,16 @@ header {
   font-size: 0.8rem;
   height: 40px;
   font-weight: 700;
+}
+
+.hover-underline {
+  transition: 0.5s;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+
+.hover-underline:hover {
+  border-color: black;
 }
 
 .lora {
